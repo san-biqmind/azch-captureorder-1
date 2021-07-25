@@ -13,6 +13,7 @@ RUN go get -u -v gopkg.in/mgo.v2
 RUN go get -u -v github.com/streadway/amqp
 RUN go get -u -v pack.ag/amqp
 RUN go get gopkg.in/matryer/try.v1
+RUN go get github.com/prometheus/client_golang/prometheus/promhttp@v1.9.0
 
 # Copy the application files
 COPY . .
